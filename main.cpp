@@ -14,7 +14,10 @@ int main(int argc, char *argv[]) {
   double *inp;
 
 
-  fp.parse("perceptron.txt");
+  if (argc > 1)
+    fp.parse(argv[1]);
+  else
+    fp.parse("perceptron.txt");
 
   if (0 != fp.error()) {
     fp.printErrmsg();
