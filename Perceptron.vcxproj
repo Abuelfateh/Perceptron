@@ -139,10 +139,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Abuelfateh.cpp" />
+    <ClCompile Include="FileParser.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Perceptron.cpp" />
+    <ClCompile Include="Vector.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Abuelfateh.h" />
+    <ClInclude Include="FileParser.h" />
+    <ClInclude Include="Perceptron.h" />
+    <ClInclude Include="Vector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

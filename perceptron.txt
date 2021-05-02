@@ -1,0 +1,28 @@
+# Perceptron learning data
+# 
+# lines starting with # characer consedered comment
+# information in this file will be parsed as case insencetive
+
+# learning parameter eta between 0 and 1, default value = 1.0
+eta = 1.0
+
+# activation function value belongs to {signum, hard_limit}, default value = signum
+activation = signum
+
+# initial weight vector, required, parse error will occure if not exists
+weight = [1,0, 0]
+
+# patterns to be used in learning
+# the order of patterns is important
+# each pattern should start with the letter p followed by : and the desired value
+# ex. p:+ == p:+1 == p:1   -> pattern belong to + class
+#     p:- == p:-1          -> pattern belong to - class
+#     any other value will be parse error
+# there must be at least one pattern in this file
+# pattern vector should not contain leading 1 for bias
+p:+ = [1, 1]
+p:+ = [1, -1]
+p:+ = [0, -1]
+p:- = [-1, -1]
+p:- = [-1, 1]
+p:- = [0, 1]
